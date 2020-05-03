@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+
+<body>
+    <h1>Register</h1>
+    <form>
+        <div>
+            <label for="firstName">First Name</label>
+            <input type="text" name="firstName" id="firstName" required>
+            <label for="lastName">Last Name</label>
+            <input type="text" name="lastName" id='lastName' required>
+        </div>
+        <div>
+            <label for="male">Male</label>
+            <input type="radio" name="sex" id="male" value="M">
+            <label for="female">Female</label>
+            <input type="radio" name="sex" id="female" value="F">
+            <label for="other">Other</label>
+            <input type="radio" name="sex" id="other" value="O">
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+            <label for="pw">Password</label>
+            <input type="password" name="password" id="pw" pattern=".{5,10}" required title="5-10 characters">
+        </div>
+        <div>
+            <label for="birthday">Birthday</label>
+            <input type="date" name="birthday" id="birthday">
+        </div>
+        <div>
+            <label for="terms">I agree to the terms and conditions</label>
+            <input type="checkbox" name="terms" id="terms">
+        </div>
+        <div>
+            <input type="submit" value="submit">
+        </div>
+    </form>
+</body>
+
+</html>
